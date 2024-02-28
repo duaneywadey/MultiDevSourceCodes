@@ -27,6 +27,8 @@
 	</style>
 </head>
 <body>
+
+
 	<div class="container">
 		<div id="content-list">
 			<h2 id="title">Hi there! I'm Ivan Duane.</h2>
@@ -46,12 +48,20 @@
 			</ul>
 		</div>
 	</div>
-	<p>
+
+
+	<!-- Input Field -->
+	<p>	
 	Add New: <input type="text" id="newSkill" placeholder="add new here">
 	</p>
+
+	<!-- Buttons to change style -->
 	<button id="demoButton" onclick="changePageBackground()">Change banner background</button>
 	<button id="demoButton" onclick="changeBackground()">Change page background</button>
 	<button id="demoButton" onclick="addNewElement()">Add new item on the list</button>
+
+
+
 	<script>
 
 		function changeBackground() {
@@ -71,7 +81,10 @@
 			li.appendChild(document.createTextNode(myInput));
 			ul.appendChild(li);
 		}
+
 	</script>
+
+
 
 </body>
 </html>
