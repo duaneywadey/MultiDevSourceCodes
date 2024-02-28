@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			font-family: Arial;
+		}
+		button {
+			width: 200px;
+			height: 100px;
+			font-size: 1.5em;
+			margin-top: 10px;
+		}
+		#content {
+			margin: 10px;
+		}
+		.container {
+			border-style: solid;
+			background-color: #aaf0d1;
+			height: auto;
+			width: 700px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="content-list">
+			<h2 id="title">Hi there! I'm Ivan Duane.</h2>
+			<ul>
+				<li>
+					I'm a CS fresh graduate of EAC Cavite.
+				</li>
+				<li>
+					I have an interest in SQL and anything data related!
+				</li>
+				<li>
+					I spend most of my time teaching myself how to clean data with MS Excel and Python.
+				</li>
+				<li>
+					I like creating visually appealing data visualizations with PowerBi.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<p>
+	Add New: <input type="text" id="newSkill" placeholder="add new here">
+	</p>
+	<button id="demoButton" onclick="changePageBackground()">Change banner background</button>
+	<button id="demoButton" onclick="changeBackground()">Change page background</button>
+	<button id="demoButton" onclick="addNewElement()">Add new item on the list</button>
+	<script>
+
+		function changeBackground() {
+
+			document.querySelector('body').style.backgroundColor = '#ADD8E6';
+		}
+
+		function changePageBackground() {
+
+			document.querySelector('.container').style.backgroundColor = '#FFFDD0';
+		}
+
+		function addNewElement() {
+			var myInput = document.getElementById("newSkill").value;
+			var ul = document.querySelector('ul');
+			var li = document.createElement('li');
+			li.appendChild(document.createTextNode(myInput));
+			ul.appendChild(li);
+		}
+	</script>
+
+</body>
+</html>
