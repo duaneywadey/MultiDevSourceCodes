@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener Example</title>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+  <script>
+    const button = document.querySelector("#myButton");
+    button.addEventListener("click", handleClick);
+
+    function handleClick() {
+      alert("Button clicked!");
+    }
+  </script>
+</body>
+</html>

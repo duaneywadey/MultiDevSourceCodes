@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM querySelectorAll() Method</title>
+	<style>
+		#container {
+			border: 1px solid black;
+			margin: 5px;
+		}
+	</style>
+</head>
+
+<body style="text-align: center;">
+	<h1>QuerySelectorAllTest</h1>
+	<h2>querySelectorAll() Method</h2>
+	<div id="container">
+		<p>This is paragraph 1.</p>
+		<p>This is paragraph 2.</p>
+		<p>This is paragraph 3.</p>
+	</div>
+	<button id="myButton">Try it</button>
+	<script>
+		const button = document.querySelector('#myButton');
+		button.addEventListener('click', changeColorandBGColor);
+
+		function changeColorandBGColor() {
+			let x = document.getElementById("container").querySelectorAll("p");
+
+			for (let i = 0; i < x.length; i++) {
+				x[i].style.backgroundColor = "green";
+				x[i].style.color = "white";
+			}
+		}
+	</script>
+</body>
+
+
+
+</html>

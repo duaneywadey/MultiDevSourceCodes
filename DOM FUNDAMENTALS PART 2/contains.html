@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <button id="addButton">Add Highlight</button>
+  <button id="removeButton">Remove Highlight</button>
+  <button id="toggleButton">Toggle Highlight</button>
+
+  <script>
+    const heading = document.getElementById('heading');
+    const addButton = document.getElementById('addButton');
+    const removeButton = document.getElementById('removeButton');
+    const toggleButton = document.getElementById('toggleButton');
+
+    addButton.addEventListener('click', function() {
+      heading.classList.add('highlight');
+    });
+
+    removeButton.addEventListener('click', function() {
+      heading.classList.remove('highlight');
+    });
+
+    toggleButton.addEventListener('click', function() {
+      heading.classList.toggle('highlight');
+    });
+  </script>
+</body>
+</html>
