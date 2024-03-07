@@ -8,6 +8,7 @@ const form = document.querySelector('#add-item');
 // Takes the input value
 const input = form.querySelector('input');
 
+
 // Refers to the form search class
 const searchForm = document.querySelector('#search-item');
 
@@ -58,21 +59,23 @@ searchForm.addEventListener('input', (event) => {
   // Loop through each item and check if it matches the query
   for (let i = 0; i < items.length; i++) {
 
-  // Get each list item and store it in item 
-  const item = items[i];
+    // Get each list item and store it in item 
+    const item = items[i];
 
-  // Set the item to lowercase
-  const text = item.textContent.toLowerCase();
+    // Set the item to lowercase
+    const text = item.textContent.toLowerCase();
 
-  // If search input matches any element from the list item, display it
-  if (text.includes(query)) {
-    item.style.display = 'block';
+    // If search input matches any element from the list item, display it
+    if (text.includes(query)) {
+      item.style.display = 'block';
+    }
+    // Or else, set display = none 
+    else {
+      item.style.display = 'none';
+    }
   }
-  
-  // Or else, set display = none 
-  else {
-    item.style.display = 'none';
-  }
-}
 
 });
+
+
+
