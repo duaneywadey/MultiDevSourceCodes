@@ -19,7 +19,7 @@ const inputSearch = searchForm.querySelector('input');
 // Deleting an element
 list.addEventListener('click', (event) => {
   if (event.target.classList.contains('delete')) {
-   event.target.closest('li').remove();
+   event.target.closest('div').remove();
  }
 });
 
@@ -74,8 +74,8 @@ searchForm.addEventListener('input', (event) => {
       item.style.display = 'none';
     }
   }
-
 });
+
 
 
 
