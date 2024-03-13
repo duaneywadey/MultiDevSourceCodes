@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		body {
+			font-family: 'Helvetica';
+			font-size: 2em;
+		}
+		input {
+			height: 50px;
+			width: 300px;
+			font-size: 1.2em;
+		}
+
+	</style>
+
+</head>
+<body>
+	<h1 id="title">Login and registration system</h1>
+	<div class="regForm" style="margin-top: 25px">
+		<h2>Register here!</h2>
+		<form action="#" id="registrationForm">
+			<p>Username: <input type="text" id="usernameReg"></p>
+			<p>Password: <input type="password" id="passwordReg"></p>
+			<input type="submit" name="" value="Register">
+		</form>	
+	</div>
+	<div class="logForm" style="margin-top: 25px; display: none;">
+		<h2>Login here! Time to login now!</h2>
+		<form action="#" id="loginForm">
+			<p>Username: <input type="text" id="username"></p>
+			<p>Password: <input type="password" id="password"></p>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	<div class="welcomePanel">
+		<h2 id="greeting"></h2>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
